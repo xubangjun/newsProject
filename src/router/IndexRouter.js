@@ -6,11 +6,11 @@ export default function IndexRouter() {
   return (
     <HashRouter>
       <Switch>
-        <Route path='/login' component={Login}/>
+        <Route path='/login' component={Login} />
         {/* <Route path='/' component={NewsSandbox}/> */}
-        <Route path='/' render={()=> 
-        localStorage.getItem("token")?
-        <NewsSandbox></NewsSandbox> : <Redirect to="/login"/>}/>
+        <Route path='/' render={() =>
+          localStorage.getItem("token") ?
+            <NewsSandbox></NewsSandbox> : <Redirect to="/login" />} />
       </Switch>
     </HashRouter>
   )

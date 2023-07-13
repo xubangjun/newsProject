@@ -1,16 +1,16 @@
-import React from 'react'; 
-import { Layout, Menu} from 'antd';
+import React from 'react'
+import { Layout, Menu } from 'antd';
 const { Sider } = Layout;
 import {
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
 } from '@ant-design/icons';
+import './index.css'
 export default function SideMenu() {
   return (
-    <div>
-       <Sider trigger={null} collapsible>
-        <div className="demo-logo-vertical" />
+      <Sider trigger={null} collapsible collapsed={false}>
+        <div className='logo'>全球新闻发布系统</div>
         <Menu
           theme="dark"
           mode="inline"
@@ -31,9 +31,11 @@ export default function SideMenu() {
               icon: <UploadOutlined />,
               label: 'nav 3',
             },
+            {
+              key: '4',
+            },
           ]}
         />
       </Sider>
-    </div>
   )
 }

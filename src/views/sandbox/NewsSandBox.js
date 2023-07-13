@@ -10,7 +10,7 @@ import RIghtList from './right-manage/RIghtList'
 import RoleList from './right-manage/RoleList'
 import UserList from './user-manage/UserList'
 import './NewsSandBox.css'
-const {Content} = Layout
+const { Content } = Layout
 
 export default function NewsSandbox() {
   const {
